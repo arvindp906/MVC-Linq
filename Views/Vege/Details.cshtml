@@ -1,0 +1,58 @@
+﻿@model CrudOperation.VegeData
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VegeData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VegetableName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VegetableName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VegetableType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VegetableType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VegetablePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VegetablePrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FarmerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FarmerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductionState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductionState)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Veg_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
